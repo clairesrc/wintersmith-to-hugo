@@ -5,7 +5,6 @@ for articledir in ./*; do
     # Move images if present
     for articlefile in ./"$articledir"/*; do
       articlefileext=${articlefile: -4}
-      echo "$articlefileext"
       if [ "$articlefileext" == ".jpg" ] || [ "$articlefileext" == "jpeg" ]; then
         mkdir "./img/$articledir" || true
         mv "$articlefile" "./img/$articlefile"
