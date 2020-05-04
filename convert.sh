@@ -19,6 +19,3 @@ for articledir in ./*; do
     rm -rf "$articledir"
   fi
 done
-
-
-
